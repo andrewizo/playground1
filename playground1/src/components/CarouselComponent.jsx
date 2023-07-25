@@ -1,8 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import exampleslide from "../Assets/exampleslide.png";
-import RhinoImg from "../Assets/RhinoPrime.png";
-import WukongImg from "../Assets/WukongPrime.png";
 import './CarouselStyle.css';
 
 function MyCarousel() {
@@ -11,7 +8,7 @@ function MyCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={exampleslide}
+                    src="https://placehold.co/600x400"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -22,7 +19,7 @@ function MyCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={WukongImg}
+                    src="https://placehold.co/600x400"
                     alt="Second slide"
                 />
 
@@ -34,7 +31,7 @@ function MyCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={RhinoImg}
+                    src= "https://placehold.co/600x400"
                     alt="Third slide"
                 />
 

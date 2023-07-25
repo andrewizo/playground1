@@ -77,7 +77,7 @@
 }
 
 .navbar-custom .navbar-dropdown .nav-link::after {
-    content: "]" !important;
+    content: "]";
     position: absolute;
     top: 50%;
     right: -10px;

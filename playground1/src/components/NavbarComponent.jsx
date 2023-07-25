@@ -43,6 +43,7 @@ function NavbarComponent() {
                 <Dropdown.Item href="./Alex">Alex</Dropdown.Item>
                 <Dropdown.Item href="./Marc">Marc</Dropdown.Item>
                 <Dropdown.Item href="./Simon">Simon</Dropdown.Item>
+                <Dropdown.Item href="./Matthew">Matthew</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <Nav.Link className="navbar-color" href="./Highlights">

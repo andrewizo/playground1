@@ -6,6 +6,7 @@ import Alex from "./routes/Alex";
 import Marc from "./routes/Marc";
 import Simon from "./routes/Simon";
 import Andrew from "./routes/Andrew";
+import Matthew from "./routes/Matthew";
 import Highlights from "./routes/Highlights";
 import { Route, Routes } from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Marc" element={<Marc />} />
         <Route path="/Andrew" element={<Andrew />} />
         <Route path="/Alex" element={<Alex />} />
+        <Route path="/Matthew" element={<Matthew />} />
         <Route path="/Highlights" element={<Highlights /> } />
       </Routes>
     </>
