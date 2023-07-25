@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Orbitron:wght@700&family=Yanone+Kaffeesatz:wght@300;400&display=swap');
+
+.navbar-custom {
+    background-color: #1E1E1E;
+}
+
+.navbar-custom .navbar-brand .navbar-color {
+    color: white;
+}
+
+.navbar-custom .nav-link.navbar-color {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-link.navbar-color::before {
+    content: "["; 
+    position: absolute;
+    top: 50%; 
+    left: -10px; 
+    transform: translateY(-50%);
+    opacity: 0; 
+    font-size: 20px; 
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.nav-link.navbar-color:hover::before {
+    opacity: 1;
+}
+
+.nav-link.navbar-color::after {
+    content: "]";
+    position: absolute;
+    top: 50%; 
+    right: -10px;
+    transform: translateY(-50%);
+    opacity: 0; 
+    font-size: 20px; 
+    pointer-events: none;
+    transition: opacity 0.3s; 
+}
+
+.nav-link.navbar-color:hover::after {
+    opacity: 1;
+}
+
+.logo-img {
+    width: 120px;
+    height: auto; 
+}
