@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { Container } from "react-bootstrap";
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Container, Dropdown } from "react-bootstrap";
+import { Nav, Navbar } from 'react-bootstrap';
 import Logo from '../Assets/Logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./NavbarStyles.css";
-
 
 function NavbarComponent() {
   const [expanded, setExpanded] = useState(false);
@@ -20,7 +18,8 @@ function NavbarComponent() {
     >
       <Container>
         <Navbar.Brand href="./" className="navbar-color">
-          <img className="d-block logo-img"
+          <img
+            className="d-block logo-img"
             src={Logo}
             alt="LogoImg"
           />
@@ -35,10 +34,18 @@ function NavbarComponent() {
             <Nav.Link className="navbar-color" href="./Playground">
               What's Playground
             </Nav.Link>
-            <Nav.Link className="navbar-color" href="./About">
-              Developers
-            </Nav.Link>
-            <Nav.Link className="navbar-color" href="./Contact">
+            <Dropdown as={Nav.Item} className="navbar-dropdown">
+              <Dropdown.Toggle as={Nav.Link} className="navbar-color">
+                Developers
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="./Andrew">Andrew</Dropdown.Item>
+                <Dropdown.Item href="./Alex">Alex</Dropdown.Item>
+                <Dropdown.Item href="./Marc">Marc</Dropdown.Item>
+                <Dropdown.Item href="./Simon">Simon</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Nav.Link className="navbar-color" href="./Highlights">
               Highlights
             </Nav.Link>
           </Nav>

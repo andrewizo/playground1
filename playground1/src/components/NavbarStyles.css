@@ -11,19 +11,19 @@
 .navbar-custom .nav-link.navbar-color {
     color: white;
     font-family: 'Chakra Petch', sans-serif;
-    position: relative; 
+    position: relative;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .nav-link.navbar-color::before {
-    content: "["; 
+    content: "[";
     position: absolute;
-    top: 50%; 
-    left: -10px; 
+    top: 50%;
+    left: -10px;
     transform: translateY(-50%);
-    opacity: 0; 
-    font-size: 20px; 
+    opacity: 0;
+    font-size: 20px;
     pointer-events: none;
     transition: opacity 0.3s;
 }
@@ -35,20 +35,80 @@
 .nav-link.navbar-color::after {
     content: "]";
     position: absolute;
-    top: 50%; 
+    top: 50%;
     right: -10px;
     transform: translateY(-50%);
-    opacity: 0; 
-    font-size: 20px; 
+    opacity: 0;
+    font-size: 20px;
     pointer-events: none;
-    transition: opacity 0.3s; 
+    transition: opacity 0.3s;
 }
 
 .nav-link.navbar-color:hover::after {
     opacity: 1;
 }
 
+.navbar-custom .navbar-dropdown .nav-link {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar-custom .navbar-dropdown .nav-link::before {
+    content: "[";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    font-size: 20px;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.navbar-custom .navbar-dropdown .nav-link:hover::before {
+    opacity: 1;
+}
+
+.navbar-custom .navbar-dropdown .dropdown-toggle::after {
+    content: none;
+}
+
+.navbar-custom .navbar-dropdown .nav-link::after {
+    content: "]" !important;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    font-size: 20px;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.navbar-custom .navbar-dropdown .nav-link:hover::after {
+    opacity: 1;
+}
+
+.navbar-custom .navbar-dropdown .dropdown-menu {
+    background-color: #1E1E1E;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-custom .navbar-dropdown .dropdown-item {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-custom .navbar-dropdown .dropdown-item:hover {
+    background-color: transparent;
+}
+
 .logo-img {
     width: 120px;
-    height: auto; 
+    height: auto;
 }
