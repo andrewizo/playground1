@@ -5,6 +5,9 @@ const Marc = () => {
     return(
         <div id = "root">
             <NavbarComponent />
+            <div>
+                <h1>Marc</h1>
+            </div>
         </div>
     )
 }
