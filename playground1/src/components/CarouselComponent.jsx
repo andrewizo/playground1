@@ -1,6 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CarouselStyle.css';
+import MS1 from '../Assets/Slides/MarketingSample1.png';
+import MS2 from '../Assets/Slides/MarketingSample2.png';
 
 function MyCarousel() {
     return (
@@ -8,39 +10,16 @@ function MyCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://placehold.co/600x400"
+                    src={MS1}
                     alt="First slide"
                 />
-                <Carousel.Caption>
-                    <h3>Mesa Prime</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://placehold.co/600x400"
+                    src={MS2}
                     alt="Second slide"
                 />
-
-                <Carousel.Caption>
-                    <h3>Wukong Prime</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src= "https://placehold.co/600x400"
-                    alt="Third slide"
-                />
-
-                <Carousel.Caption>
-                    <h3>Rhino Prime</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
     );
